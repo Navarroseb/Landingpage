@@ -1,80 +1,31 @@
+import PropTypes from "prop-types";
 import React from "react";
-import img1 from "../../img/hillman-7.jpg";
-import img2 from "../../img/daniele-barresi-food-carving-3.jpg";
-import img3 from "../../img/Ingredients2019.jpg";
-import img4 from "../../img/Obra-de-Adam-Hillman-5-1024x1024.jpg";
 
-let card = () => {
+let card = (props) => {
 	return (
-		<div className="row display-flex text-center">
+		<div className="row">
 			<div className="col">
 				<div className="card">
-					<img src={img1} className="card-img-top" alt="..." />
+					<img src={props.img} className="card-img-top" alt="..." />
 					<div className="card-body">
-						<h5 className="card-title">Card title</h5>
-						<p className="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
-						</p>
-						<a
-							href="https://www.instagram.com/witenry/"
-							className="btn btn-primary">
-							Go somewhere
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="col">
-				<div className="card">
-					<img src={img2} className="card-img-top" alt="..." />
-					<div className="card-body">
-						<h5 className="card-title">Card title</h5>
-						<p className="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
-						</p>
-						<a
-							href="https://www.instagram.com/danielebarresi_artist/"
-							className="btn btn-primary">
-							Go somewhere
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="col">
-				<div className="card">
-					<img src={img3} className="card-img-top" alt="..." />
-					<div className="card-body">
-						<h5 className="card-title">Card title</h5>
-						<p className="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
-						</p>
-						<a href="#" className="btn btn-primary">
-							Go somewhere
-						</a>
-					</div>
-				</div>
-			</div>
-			<div className="col">
-				<div className="card">
-					<img src={img4} className="card-img-top" alt="..." />
-					<div className="card-body">
-						<h5 className="card-title">Card title</h5>
-						<p className="card-text">
-							Some quick example text to build on the card title
-							and make up the bulk of the card's content.
-						</p>
-						<a
-							href="https://www.instagram.com/witenry/"
-							className="btn btn-primary">
-							Go somewhere
+						<h5 className="card-title">{props.title}</h5>
+						<p className="card-text">{props.text}</p>
+						<a href={props.href} className="btn btn-primary">
+							{props.buttontext}
 						</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	);
+};
+
+card.propTypes = {
+	title: PropTypes.string,
+	text: PropTypes.string,
+	buttontext: PropTypes.string,
+	src: PropTypes.string,
+	href: PropTypes.string,
 };
 
 export default card;

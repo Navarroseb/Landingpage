@@ -1,18 +1,15 @@
 import React from "react";
+import PropTypes from "prop-types";
 
-let jumbotron = () => {
+const Jumbotron = (props) => {
 	return (
 		<div class="container py-4">
 			<div class="p-5 mb-4 bg-light rounded-3">
 				<div class="container-fluid py-5">
-					<h1 class="display-5 fw-bold">A Warm Welcome!</h1>
-					<p class="col-md-8 fs-4">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-						sed do eiusmod tempor incididunt ut labore et dolore
-						magna aliqua.
-					</p>
+					<h1 class="display-5 fw-bold">{props.title}</h1>
+					<p class="col-md-8 fs-4">{props.text}</p>
 					<button class="btn btn-primary btn-lg" type="button">
-						Call to action!
+						{props.buttontext}
 					</button>
 				</div>
 			</div>
@@ -20,4 +17,9 @@ let jumbotron = () => {
 	);
 };
 
-export default jumbotron;
+Jumbotron.propTypes = {
+	title: PropTypes.string,
+	text: PropTypes.string,
+	buttontext: PropTypes.string,
+};
+export default Jumbotron;
