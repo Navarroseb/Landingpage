@@ -1,5 +1,5 @@
 import React from "react";
-import img from "";
+/* import img1 from "img"; */
 
 let card = () => {
 	return (

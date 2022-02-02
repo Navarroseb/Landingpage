@@ -2,10 +2,10 @@ import React from "react";
 
 let navbar = () => {
 	return (
-		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<nav class="navbar navbar-expand-lg navbar-light bg-secondary">
 			<div class="container-fluid">
 				<a class="navbar-brand" href="#">
-					Navbar
+					Start Boobstrap
 				</a>
 				<button
 					class="navbar-toggler"
@@ -17,7 +17,9 @@ let navbar = () => {
 					aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				</button>
-				<div class="collapse navbar-collapse" id="navbarNav">
+				<div
+					class="collapse navbar-collapse justify-content-end"
+					id="navbarNav">
 					<ul class="navbar-nav">
 						<li class="nav-item">
 							<a
@@ -29,16 +31,18 @@ let navbar = () => {
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">
-								Features
+								About
 							</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">
-								Pricing
+								Services
 							</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link disabled">Disabled</a>
+							<a class="nav-link" href="#">
+								Contact
+							</a>
 						</li>
 					</ul>
 				</div>
