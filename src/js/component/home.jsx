@@ -5,7 +5,10 @@ import Cards from "./card.jsx";
 import Footer from "./footer.jsx";
 import PropTypes from "prop-types";
 import propTypes from "prop-types";
-import imagenes from "./imagenes.jsx";
+import img1 from "../../img/hillman-7.jpg";
+import img2 from "../../img/daniele-barresi-food-carving-3.jpg";
+import img3 from "../../img/Ingredients2019.jpg";
+import img4 from "../../img/Obra-de-Adam-Hillman-5-1024x1024.jpg";
 
 const Home = () => {
 	return (
@@ -25,7 +28,7 @@ const Home = () => {
 						title="Card title"
 						text="Some quick example text to build on the card title and make up the bulk of the card's content."
 						buttontext="Go somewhere"
-						src={imagenes[0]}
+						img={img1}
 						href="https://www.instagram.com/witenry/"
 					/>
 				</div>
@@ -34,7 +37,7 @@ const Home = () => {
 						title="Card title"
 						text="Some quick example text to build on the card title and make up the bulk of the card's content."
 						buttontext="Go somewhere"
-						src={imagenes[1]}
+						img={img2}
 						href="https://www.instagram.com/witenry/"
 					/>
 				</div>
@@ -43,7 +46,7 @@ const Home = () => {
 						title="Card title"
 						text="Some quick example text to build on the card title and make up the bulk of the card's content."
 						buttontext="Go somewhere"
-						src={imagenes[2]}
+						img={img3}
 						href="https://www.instagram.com/witenry/"
 					/>
 				</div>
@@ -52,7 +55,7 @@ const Home = () => {
 						title="Card title"
 						text="Some quick example text to build on the card title and make up the bulk of the card's content."
 						buttontext="Go somewhere"
-						src={imagenes[3]}
+						img={img4}
 						href="https://www.instagram.com/witenry/"
 					/>
 				</div>

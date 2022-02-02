@@ -24,7 +24,7 @@ card.propTypes = {
 	title: PropTypes.string,
 	text: PropTypes.string,
 	buttontext: PropTypes.string,
-	src: PropTypes.string,
+	img: PropTypes.string,
 	href: PropTypes.string,
 };
 
