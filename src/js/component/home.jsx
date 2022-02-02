@@ -4,7 +4,6 @@ import Jumbotron from "./Jumbotron.jsx";
 import Cards from "./card.jsx";
 import Footer from "./footer.jsx";
 
-
 const Home = () => {
 	return (
 		<>
